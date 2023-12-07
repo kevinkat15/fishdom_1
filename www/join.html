@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Fishdom Club</title>
+
+	<!-- Bootstrap Links -->
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css">
+	<!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script> -->
+	
+	<!-- Link to your CSS file -->
+	<link rel="icon" href="Images/ClownFish.png" type="image/x-icon">
+	<link rel="stylesheet" href="CSS/styles.css">
+	<script src="JS/script.js"></script>
+</head>
+
+<body>
+	<header>
+		<!-- Navigation Bar -->
+		<nav class="navbar sticky-top navbar-dark bg-dark">
+			<a class="navbar-brand" href="index.html">Home</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+				aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNavDropdown">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link" href="fishdom.html">What is Fishdom?</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="join.html">Join Us!</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="index.html#downloadSection">Download App</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button"
+							data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Meet Our Members!
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+							<a class="dropdown-item" href="rachel.html">Rachel</a>
+							<a class="dropdown-item" href="sloan.html">Sloan</a>
+							<a class="dropdown-item" href="mana.html">Mana</a>
+							<a class="dropdown-item" href="sam.html">Sam</a>
+							<a class="dropdown-item disabled" href="#">You could be here too! 😉</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</nav>
+
+		<a href="index.html">
+			<img id="headerImg" src="Images/fishdom_1.png" alt="Fishdom Club">
+		</a>
+	</header>
+
+	<main>
+		<!-- TODO: notify users that they need to pay $20 entry fee -->
+		<p id="formIntro">
+			Thank you for your interest in joining Fishdom Club! Just an FYI that there is an entrance fee of
+			<span id="emphasis2">$20.00</span> just to help with club activity fees. Please fill out the form below and we will get back 
+			to you with the next steps. We look forward to having you join us!
+		</p>
+		
+		<div class="d-flex justify-content-center align-items-center formContainer">
+			<form id="signupForm" action="form_handler.php" method="post">
+				<div class="col-12">
+					<label for="name" class="form-label name">Name</label>
+					<input type="text" class="form-control" id="name" name="name" autocomplete="name" required>
+				</div>
+				<br>
+				<div class="col-12">
+					<label for="email" class="form-label email">Email</label>
+					<input type="email" class="form-control" id="email" name="email" autocomplete="email" required>
+				</div>
+				<br>
+				<div class="col-12">
+					<label for="phone" class="form-label phone">Phone</label>
+					<input type="tel" class="form-control" id="phone" name="tel" autocomplete="tel" required>
+				</div>
+				<br>
+				<div class="col-12">
+					<label for="age" class="form-label age">Age</label>
+					<input type="number" class="form-control" id="age" name="age" autocomplete="off" required>
+				</div>
+				<br>
+				<div class="col-12">
+					<label for="gender" class="form-label gender">Sex</label>
+					<select class="form-select" id="gender" name="gender" autocomplete="sex" required>
+						<option value="">Select</option>
+						<option value="male">Male</option>
+						<option value="female">Female</option>
+						<option value="other">Other</option>
+					</select>
+				</div>
+				<br>
+				<div class="col-12 submitBtn">
+					<button type="submit" class="btn btn-primary">Sign Up</button>
+				</div>
+			</form>
+		</div>
+
+		<!-- <div class="formContainer"> -->
+		<!-- <div class="d-flex justify-content-center">
+			<form id="signupForm">
+				<div>
+					<label class="name">
+						Name 
+						<input type="text" class="form-control" id="name" name="name" autocomplete="name" required>
+					</label>
+				</div>
+
+				<div>
+					<label class="email">
+						Email
+						<input type="email" class="form-control" id="email" name="email" autocomplete="email" required>
+					</label>
+				</div>
+
+				<div>
+					<label class="phone">
+						Phone
+						<input type="tel" class="form-control" id="phone" name="tel" autocomplete="tel" required>
+					</label>
+				</div>
+
+				<div>
+					<label class="age">
+						Age
+						<input type="number" class="form-control" id="age" name="age" autocomplete="off" required>
+					</label>
+				</div>
+
+				<div>
+					<label class="gender">
+						Sex
+						<select class="form-select" id="gender" name="gender" autocomplete="sex" required>
+							<option value="">Select</option>
+							<option value="male">Male</option>
+							<option value="female">Female</option>
+							<option value="other">Other</option>
+						</select>
+					</label>
+				</div>
+
+				<div>
+					<button type="submit">Sign Up</button>
+				</div>
+			</form>
+		</div> -->
+
+		<div id="signupSuccess">
+			<h3>Thank you for signing up!</h3>
+			<p>Check your email for a welcome message from Rachel regarding the next steps within the next few days.</p>
+		</div>
+	</main>
+	
+	<footer>
+		<p>&copy; 2023 Fishdom Club. All rights reserved.</p>
+	</footer>
+</body>
+
+</html>

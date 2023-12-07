@@ -1,0 +1,262 @@
+/* Hide scrollbar for Chrome, Safari and Opera */
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+html {
+    scrollbar-width: none; /* For Firefox */
+    -ms-overflow-style: none;  /* For Internet Explorer and Edge */
+    scroll-behavior: smooth;
+    /* background-color: #1449dc9d; */
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    /* background-color: #1449dc9d; */
+}
+
+footer {
+    padding-top: 5px;
+    padding-bottom: 1px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 8px;
+    /* background-color: #1449dc9d; */
+    background-color: #4f5c66;
+    flex-shrink: 0; 
+}
+
+main {
+    /* background-color: #1449dc9d; */
+    background-color: #4f5c66;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-bottom: 5px;
+    overflow-x: wrap;
+    flex: 1 0 auto;
+}
+
+header {
+    /* background-color: #1449dc9d; */
+    background-color: #4f5c66;
+    text-align: center;
+}
+
+#headerImg {
+    width: 100%;
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    color: whitesmoke;
+    text-align: center;
+    font-size: 225%;
+}
+
+h2 img, h3 img {
+    width: 15%;
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+}
+
+.weekly2, .buttons_sect2 {
+    transform: scaleX(-1);
+}
+
+p, li {
+    font-family: 'Roboto', sans-serif;
+    font-size: 145%;
+    color: rgb(224, 224, 224);
+    /* color: #420b07; */
+    list-style-type: square;
+}
+
+.button1 a {
+    font-family: 'Roboto', sans-serif;
+    font-size: smaller;
+}
+
+.button1 a:hover {
+    border: 3px solid #ffab25;
+    background-color: #8a20c6;
+}
+
+#highlight1 {
+    color: #e93e12;
+    font-weight: bolder;
+}
+
+#highlight2 {
+    /* color: #ff741b; */
+    text-decoration: underline;
+}
+
+#highlight3 {
+    color: #eed7b9;
+    font-style: italic;
+}
+
+#emphasis1 {
+    color: #fb5624;
+    /* font-style: italic; */
+}
+
+#emphasis2, #emphasis3 {
+    color: #ffd632;
+    /* font-style: italic; */
+}
+
+.form-label, .form-control, .form-select {
+    width: 100%;
+    max-width: 900px;
+}
+
+.submitBtn {
+    text-align: center;
+}
+
+#signupSuccess {
+    display: none;
+    text-align: center;
+}
+
+label {
+    font-family: 'Roboto', sans-serif;
+    font-size: 155%;
+    text-align: center;
+    font-weight: bold;
+}
+
+label.name {
+    color: #e93e12;
+}
+
+label.email {
+    color: #fb5624;
+}
+
+label.phone {
+    color: #ffab25;
+}
+
+label.age {
+    color: #8a20c6;
+}
+
+label.gender {
+    color: #eed7b9;
+}
+
+input {
+    max-width: 50%;
+}
+
+div#visitFishdomWiki {
+    text-align: center;
+}
+
+.rachel {
+    border: 8px solid #dea96e;
+    border-radius: 15%;
+    max-width: 425px;
+    width: 45%;
+    height: auto;
+}
+
+.sloan {
+    border: 8px solid #744c51;
+    border-radius: 15%;
+    max-width: 425px;
+    width: 45%;
+    height: auto;
+}
+
+.mana {
+    border: 8px solid #00b269;
+    border-radius: 15%;
+    max-width: 425px;
+    width: 45%;
+    height: auto;
+}
+
+.sam {
+    border: 8px solid #0096c7;
+    border-radius: 15%;
+    max-width: 425px;
+    width: 45%;
+    height: auto;
+}
+
+.memberFish {
+    max-width: 125px;
+    width: 100%;
+    height: auto;
+}
+
+.memberFish2 {
+    transform: scaleX(-1);
+    max-width: 125px;
+    width: 100%;
+    height: auto;
+}
+
+#achillesTang1 {
+    color: #50a1d9;
+}
+
+#achillesTang2 {
+    color: #fff437;
+}
+
+#moorishIdol1 {
+    color: #ffd73f;
+}
+
+#moorishIdol2 {
+    color: #c36624;
+}
+
+#blueDiamond1 {
+    color:#a2d7fc;
+}
+
+#blueDiamond2 {
+    color: #f2497a;
+}
+
+#redtooth1 {
+    color: #dc3bdf;
+}
+
+#redtooth2 {
+    color:#5bc433; 
+}
+
+
+li.contact a:link {
+    color: whitesmoke;
+    text-decoration: underline;
+}
+
+li.contact a:hover {
+    color: #ffab25;
+    text-decoration: overline;
+}
+
+.float-div {
+    float: left;
+}
+
+.clear-div {
+    clear: both;
+}
